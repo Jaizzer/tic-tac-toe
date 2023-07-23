@@ -65,7 +65,7 @@ form.addEventListener('submit', function (event) {
         const player2 = Player(player2Name, player2Symbol);
 
         // Start game. 
-        startGame();
+        startGame(player1, player2);
     }
 });
 
