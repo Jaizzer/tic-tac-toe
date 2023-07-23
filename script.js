@@ -53,6 +53,11 @@ function startGame() {
 
     // Create game board object.
     const gameBoard = (()=> {
+
+        // Board array.
+        let board = [['', '', ''],
+        ['', '', ''],
+        ['', '', '']];
         
     })()
 }
