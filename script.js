@@ -62,5 +62,12 @@ function startGame() {
         // Index of recently modified cell.
         let recentlyModifiedCellIndex = {row: "", column: ""};
                 
+        // Update board method.
+        const update = ([row, column], symbol) => {
+            board[row][column] = symbol;
+            recentlyModifiedCellIndex.row = row;
+            recentlyModifiedCellIndex.column = column
+        };
+        
     })()
 }
