@@ -42,5 +42,13 @@ form.addEventListener('submit', function (event) {
         // Hide lobby and popup the play-area.
         document.querySelector(".lobby").className = "lobby hidden";
         document.querySelector(".play-area").className = "play-area visible";
+
+        // Start game. 
+        startGame();
     }
 });
+
+// Start game.
+function startGame() {
+
+}
