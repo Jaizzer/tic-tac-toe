@@ -9,3 +9,8 @@
     --secondary: #d4beea;
     --accent: #6e36a6;
 }
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
