@@ -29,9 +29,7 @@ body {
 }
 
 
-.opening,
-.lobby,
-.play-area {
+.visible {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
 }
