@@ -60,6 +60,10 @@ form.addEventListener('submit', function (event) {
             return { getName, getSymbol }
         }
 
+        // Create player 1 and player 2 object.
+        const player1 = Player(player1Name, player1Symbol);
+        const player2 = Player(player2Name, player2Symbol);
+
         // Start game. 
         startGame();
     }
