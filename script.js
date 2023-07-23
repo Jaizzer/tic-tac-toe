@@ -51,4 +51,8 @@ form.addEventListener('submit', function (event) {
 // Start game.
 function startGame() {
 
+    // Create game board object.
+    const gameBoard = (()=> {
+        
+    })()
 }
