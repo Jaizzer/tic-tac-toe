@@ -119,4 +119,40 @@ function startGame() {
         return { update, reset, getGameStatus };
 
     })();
+
+
+    // Create flow control object to control turns between players.
+    const flowControl = (() => { 
+
+        // Initialize Player variables.
+        let currentTurnPlayer;
+        let nextTurnPlayer;
+        
+        // Set the players, first paremeter would be the first input would be the first turn holder.
+        const setPlayers = (player1, player2) => {
+            currentTurnPlayer = player1;
+            nextTurnPlayer = player2;
+        };
+
+        // Switch the turns between the players.
+        const switchTurn = () => {
+            let temp = currentTurnPlayer;
+            currentTurnPlayer = nextTurnPlayer;
+            nextTurnPlayer = temp;
+        };
+
+        // Return the current turn player.
+        const getCurrentTurnPlayer = () => {
+            return currentTurnPlayer;
+        }
+
+        // Return the next turn player.
+        const getNextTurnPlayer = () => {
+            return nextTurnPlayer;
+        };
+
+        // Return flow control object.
+        return { setPlayers, switchTurn, getCurrentTurnPlayer, getNextTurnPlayer };
+        
+    })();
 }
