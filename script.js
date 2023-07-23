@@ -76,7 +76,12 @@ function startGame() {
                      ['', '', '']];
         };
 
-        return { update, reset };
+        // Check game status, wheter game is ongoing, or game is over: tie or win.
+        const getGameStatus = () => {
+
+        };
+
+        return { update, reset, getGameStatus };
 
     })();
 }
