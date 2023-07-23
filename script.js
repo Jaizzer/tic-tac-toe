@@ -76,5 +76,7 @@ function startGame() {
                      ['', '', '']];
         };
 
+        return { update, reset };
+
     })()
 }
