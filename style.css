@@ -20,3 +20,8 @@ html, body {
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+.content {
+    display: grid;
+    grid-template-rows: 1fr;
+}
