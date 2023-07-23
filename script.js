@@ -79,6 +79,41 @@ function startGame() {
         // Check game status, wheter game is ongoing, or game is over: tie or win.
         const getGameStatus = () => {
 
+            let col = recentlyModifiedCellIndex.column;
+            let row = recentlyModifiedCellIndex.row;
+
+            // Traverse horizontally
+            if (board[row][col] === board[row][0] && board[row][col] === board[row][1] && board[row][col] === board[row][2]) {
+                return "win";
+            }
+            
+            // Traverse vertically
+            if (board[row][col] === board[0][col] && board[row][col] === board[1][col] && board[row][col] === board[2][col]) {
+                return "win";
+            }
+
+            // Traverse diagonally (Upper left to Bottom Right)
+            if (row === col) {
+                if (board[row][col] === board[0][0] && board[row][col] === board[1][1] && board[row][col] === board[2][2]) {
+                    return "win";
+                }
+            }
+
+            // Traverse diagonally (Lower Left to Upper Right)
+            if ((row === 1 && col === 1) || (row === 0 && col === 2) || (row === 2 && col === 0)) {
+                if (board[row][col] === board[0][2] && board[row][col] === board[1][1] && board[row][col] === board[2][0]) {
+                    return "win";
+                }
+            }
+
+            // Return 'tie' if there is no empty cell but no consecutive symbol found.
+            if (!board.some(boardRow => boardRow.includes(''))) {
+                return "Tie";
+            }
+
+            // If there are still empty cell and no consecutive cell found, then game is not yet over.
+            return "Ongoing";
+        
         };
 
         return { update, reset, getGameStatus };
