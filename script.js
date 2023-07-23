@@ -68,6 +68,13 @@ function startGame() {
             recentlyModifiedCellIndex.row = row;
             recentlyModifiedCellIndex.column = column
         };
-        
+
+         // Reset board method.
+         const reset = () => {
+            board = [['', '', ''],
+                     ['', '', ''],
+                     ['', '', '']];
+        };
+
     })()
 }
