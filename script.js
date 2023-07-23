@@ -58,6 +58,9 @@ function startGame() {
         let board = [['', '', ''],
         ['', '', ''],
         ['', '', '']];
-        
+
+        // Index of recently modified cell.
+        let recentlyModifiedCellIndex = {row: "", column: ""};
+                
     })()
 }
