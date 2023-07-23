@@ -1,3 +1,11 @@
 * {
     box-sizing: border-box;
 }
+
+:root {
+    --text: #0a141f;
+    --background: #ecf2f9;
+    --primary: #8b8bda;
+    --secondary: #d4beea;
+    --accent: #6e36a6;
+}
