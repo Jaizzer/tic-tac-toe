@@ -49,7 +49,7 @@ form.addEventListener('submit', function (event) {
 });
 
 // Start game.
-function startGame() {
+function startGame(player1, player2) {
 
     // Create game board object.
     const gameBoard = (()=> {
