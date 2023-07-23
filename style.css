@@ -27,3 +27,11 @@ body {
     display: grid;
     grid-template-rows: 1fr;
 }
+
+
+.opening,
+.lobby,
+.play-area {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
