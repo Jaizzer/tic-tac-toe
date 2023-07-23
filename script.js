@@ -43,6 +43,23 @@ form.addEventListener('submit', function (event) {
         document.querySelector(".lobby").className = "lobby hidden";
         document.querySelector(".play-area").className = "play-area visible";
 
+        // Player factory function.
+        function Player(playerName, playerSymbol) {
+            
+            // Set player's name and symbol.
+            const name = playerName;
+            const symbol = playerSymbol;  
+
+            // Return player's name.
+            const getName = () => name;
+            
+            // Rerturn player's symbol.
+            const getSymbol = () => symbol;
+
+            // Return player object.
+            return { getName, getSymbol }
+        }
+
         // Start game. 
         startGame();
     }
