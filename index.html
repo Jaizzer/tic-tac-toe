@@ -17,6 +17,43 @@
             </div>
             <button class="play">Play</button>
         </div>
+
+        <div class="lobby">
+            <div class="logo">
+                <div class="icon">
+                </div>
+                <div class="title">TicTacToe</div>
+            </div>
+            <form action="" class="registration">
+                <div class="entry-field">
+                    <div class="entry-field-heading">Player 1</div>
+                    <div class="name">
+                        <label for="player-1-name">Name:</label>
+                        <input type="text" id="player-1-name" required>
+                        <label for="player-1-symbol">Symbol:</label>
+                        <select id="player-1-symbol" required>
+                            <option value="x" selected>x</option>
+                            <option value="o">o</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="entry-field">
+                    <div class="entry-field-heading">Player 2</div>
+                    <div class="name">
+                        <label for="player-2-name">Name:</label>
+                        <input type="text" id="player-2-name" required>
+                        <label for="player-2-symbol">Symbol:</label>
+                        <select id="player-2-symbol" required>
+                            <option value="x">x</option>
+                            <option value="o" selected>o</option>
+                        </select>
+                    </div>
+                </div>
+                <button id="game-starter" type="submit">Start</button>
+            </form>
+        </div>
+
+
     </div>
 </body>
 </html>
