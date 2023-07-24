@@ -38,7 +38,7 @@ body {
     display: none;
 }
 
-.play-area {
+.play-area.visible {
     display: grid;
     grid-template-columns: 600px 300px;
     grid-template-rows: repeat(2, auto) 1fr;
