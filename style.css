@@ -26,6 +26,7 @@ body {
 
     display: grid;
     grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
 }
 
 
@@ -39,6 +40,9 @@ body {
 }
 
 .play-area.visible {
+
+    padding: clamp(15px, 5%, 30px);
+
     display: grid;
     grid-template-rows: repeat(2, auto) 1fr;
 }
