@@ -176,4 +176,26 @@ function startGame(player1, player2) {
         return { setPlayers, switchTurn, getCurrentTurnPlayer, getNextTurnPlayer };
         
     })();
+
+    
+    // Create the gameboard UI.
+    const renderBoard = ( () => {
+        // Temporary variable for created grid cell.
+        let cell;
+
+        // Create 3x3 'clickable' grid cells for the gameboard.
+        for (let i = 0; i < 3; i++) {
+            for (let j = 0; j < 3; j++) {
+
+                // Create the cell
+                cell = document.createElement(`div`);
+                cell.classList.add('cell');
+                cell.id = `${i}-${j}`;
+                cell.addEventListener("click", executeMove)
+                
+                // Append the cell to the board.
+                document.querySelector('.board').appendChild(cell);
+            }
+        }
+    })();
 }
