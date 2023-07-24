@@ -177,7 +177,9 @@ function startGame(player1, player2) {
         
     })();
 
-    
+    // Set the players.
+    flowControl.setPlayers(player1, player2);
+
     // Create the gameboard UI.
     const renderBoard = ( () => {
         // Temporary variable for created grid cell.
