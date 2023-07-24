@@ -260,6 +260,12 @@ function startGame(player1, player2) {
         // Reset player's initial turns
         flowControl.setPlayers(player1, player2);
 
+        // Set current turn player to 'active' state in player-list section in DOM.
+        document.querySelector(`#${flowControl.getCurrentTurnPlayer().getName()}`).className = "player-status active"
+
+        // Set next turn player to 'idle' state in player-list section in DOM.
+        document.querySelector(`#${flowControl.getNextTurnPlayer().getName()}`).className = "player-status idle"
+
         // Empty all cells in DOM.
         let cells = document.querySelectorAll(".cell");
         cells.forEach(cell => cell.textContent = "");
