@@ -83,6 +83,9 @@ body {
 }
 
 .player-list {
+    display: grid;
+    row-gap: 5px;
+    align-content: start;
 
 }
 
