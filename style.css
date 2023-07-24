@@ -82,3 +82,10 @@ body {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
 }
+
+.player-status.active {
+    background-color: green;
+}
+.player-status.idle {
+    background-color: red;
+}
