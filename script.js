@@ -197,5 +197,45 @@ function startGame(player1, player2) {
                 document.querySelector('.board').appendChild(cell);
             }
         }
+
+        // Execute move function definition.
+        function executeMove() {
+
+            // Check if current cell is empty before making move.
+            if (this.textContent === "") {
+                // Update game board at current cell location and current player's symbol.
+                gameBoard.update(this.id.split('-'), flowControl.getCurrentTurnPlayer().getSymbol());
+
+                // Update cell in DOM.
+                this.textContent = flowControl.getCurrentTurnPlayer().getSymbol();
+
+                // Check if the game is over.
+                if (gameBoard.getGameStatus() !== "Ongoing") {
+
+                    // Display the winner if someone won.
+                    if (gameBoard.getGameStatus() === "win") {
+                        // Add 1 second delay before displaying result.
+                        setTimeout( function () {
+                            alert(`${flowControl.getCurrentTurnPlayer().getName()} Won!`)
+                        }, 1000);
+                    }
+                    // If no one won, display "Tie".
+                    else {
+                        // Add 1 second delay before displaying result.
+                        setTimeout( function () {
+                            alert(`Tie`)
+                        }, 1000);
+                    }
+                }
+                // If the game is not over  yet, switch the player's turns.
+                else {
+                    flowControl.switchTurn();
+                }
+            }
+            // If cell is empty prevent player from making his/her move there.
+            else {
+                alert("Cell is already taken. Choose an empty one.")
+            }
+        };
     })();
 }
