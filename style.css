@@ -51,7 +51,7 @@ body {
     background-color: white;
     border: 1px solid black;
 
-    display: flex;
+    display: grid;
     justify-content: center;
     align-content: center;
 
