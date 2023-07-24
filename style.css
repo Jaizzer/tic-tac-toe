@@ -63,7 +63,7 @@ body {
     grid-column: 1 / 2;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
 
     column-gap: 10px;
