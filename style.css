@@ -38,6 +38,13 @@ body {
     display: none;
 }
 
+.play-area {
+    display: grid;
+    grid-template-columns: 600px 300px;
+    grid-template-rows: repeat(2, auto) 1fr;
+}
+
+
 .board {
     height: auto;
     width: auto;
