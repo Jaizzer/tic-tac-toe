@@ -261,4 +261,38 @@ function startGame(player1, player2) {
 
     // Append restart button to the DOM.
     document.querySelector(".actions").appendChild(restartButton);
+
+
+    // Create 'New Game' button.
+    const newGameButton = document.createElement("button");
+    newGameButton.id = "new-game";
+    newGameButton.textContent = "New Game";
+
+    // Add feature to new-game button.
+    newGameButton.addEventListener("click", function() {
+
+        // Hide the play-area section.
+        document.querySelector(".play-area").className = "play-area hidden";
+        
+        // Popup the lobby back.
+        document.querySelector(".lobby").className = "lobby visible";
+
+
+        // Cleanup previous play area for next game.
+
+        // Delete previous board.
+        const board = document.querySelector(".board");
+        while (board.firstChild) {
+            board.removeChild(board.firstChild);
+        }
+
+        // Delete all action buttons.
+        const actions = document.querySelector(".actions");
+        while (actions.firstChild) {
+            actions.removeChild(actions.firstChild);
+        }
+    })
+
+    // Append "New Game" button to the actions section in DOM.
+    document.querySelector(".actions").appendChild(newGameButton);
 }
