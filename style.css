@@ -45,6 +45,8 @@ body {
 
     display: grid;
     grid-template-rows: repeat(2, auto) 1fr;
+
+    row-gap: 10px;
 }
 
 .play-area .logo {
@@ -65,6 +67,7 @@ body {
     grid-template-rows: auto 1fr;
 
     column-gap: 10px;
+    row-gap: 10px;
 }
 
 .board {
