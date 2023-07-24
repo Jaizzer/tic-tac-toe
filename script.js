@@ -232,6 +232,12 @@ function startGame(player1, player2) {
                 // If the game is not over  yet, switch the player's turns.
                 else {
                     flowControl.switchTurn();
+
+                    // Set current turn player to 'active' state in player-list section in DOM.
+                    document.querySelector(`#${flowControl.getCurrentTurnPlayer().getName()}`).className = "player-status active"
+
+                    // Set next turn player to 'idle' state in player-list section in DOM.
+                    document.querySelector(`#${flowControl.getNextTurnPlayer().getName()}`).className = "player-status idle"
                 }
             }
             // If cell is empty prevent player from making his/her move there.
