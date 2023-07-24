@@ -41,7 +41,7 @@ body {
 
 .play-area.visible {
 
-    padding: clamp(15px, 5%, 30px);
+    padding: 20px;
 
     display: grid;
     grid-template-rows: repeat(2, auto) 1fr;
