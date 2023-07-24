@@ -60,9 +60,6 @@ body {
 
 .board {
 
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
-
     height: auto;
     width: auto;
 
@@ -83,8 +80,7 @@ body {
 }
 
 .player-list {
-    grid-column: 2 / 3;
-    grid-row: 3 / 4;
+
 }
 
 .player-status.active {
