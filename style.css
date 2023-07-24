@@ -53,6 +53,11 @@ body {
     grid-row: 2 / 3;
 }
 
+.battleground {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
 .board {
 
     grid-column: 1 / 2;
