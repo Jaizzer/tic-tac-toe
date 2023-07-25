@@ -71,6 +71,14 @@ body {
     background-color: var(--accent);
 }
 
+.opening.visible .logo {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(5px, 2%, 10px);
+}
+
 .opening.visible .icon {
     width: clamp(50px, 12vw, 65px);
     height: 0;
