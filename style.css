@@ -52,6 +52,25 @@ body {
     font-weight: 600;
 }
 
+.opening.visible button {
+    width: clamp(67px, 15%, 100px);
+    padding: clamp(4px, 1%, 7px) clamp(2.5px, 2%, 4px);
+
+    border-radius: 5px;
+    border: 1px solid var(--primary);
+
+    background-color: var(--primary);
+
+    font-size: clamp(12px, 4vw, 20px);
+    font-weight: 600;
+    color: white;
+}
+
+.opening.visible button:hover {
+    border-color: var(--accent);
+    background-color: var(--accent);
+}
+
 .play-area.visible {
 
     padding: 20px;
