@@ -45,6 +45,12 @@ body {
    margin: max(2%, 15px);
 
    background-color: var(--secondary);
+
+   display: grid;
+   justify-content: center;
+   align-content: center;
+   justify-items: center;
+   align-items: center;
 }
 
 .opening.visible > .logo > .title {
