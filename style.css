@@ -47,6 +47,11 @@ body {
    background-color: var(--secondary);
 }
 
+.opening.visible > .logo > .title {
+    font-size: clamp(40px, 10vw, 60px);
+    font-weight: 600;
+}
+
 .play-area.visible {
 
     padding: 20px;
