@@ -77,6 +77,8 @@ body {
     padding-top: min(100%, 400px);
 
     position: relative;
+
+    justify-self: center;
 }
 
 .board {
