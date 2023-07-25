@@ -39,6 +39,14 @@ body {
     display: none;
 }
 
+.opening.visible {
+   border-radius: 30px;
+
+   margin: max(2%, 15px);
+
+   background-color: var(--secondary);
+}
+
 .play-area.visible {
 
     padding: 20px;
