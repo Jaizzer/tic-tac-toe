@@ -70,14 +70,27 @@ body {
     row-gap: 10px;
 }
 
-.board {
+.board-container {
+    height: 0;
+    width: min(100%, 400px);
 
-    height: auto;
-    width: auto;
+    padding-top: min(100%, 400px);
+
+    position: relative;
+}
+
+.board {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+
+    height: 100%;
+    width: 100%;
 
     display: grid;
-    grid-template-rows: repeat(3, 100px);
-    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .cell {
