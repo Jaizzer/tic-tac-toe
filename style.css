@@ -110,7 +110,7 @@ body {
 .lobby.visible {
     margin: max(2%, 15px);
 
-    padding: max(2%, 15px);
+    padding: max(2%, 25px);
 
     border-radius: 30px;
 
