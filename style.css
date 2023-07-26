@@ -107,6 +107,16 @@ body {
     background-color: var(--accent);
 }
 
+.lobby.visible {
+    margin: max(2%, 15px);
+    
+    padding: max(2%, 15px);
+
+    border-radius: 30px;
+
+    background-color: var(--secondary);
+}
+
 .play-area.visible {
 
     padding: 20px;
