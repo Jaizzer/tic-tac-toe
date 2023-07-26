@@ -181,6 +181,25 @@ body {
     font-weight: 600;
 }
 
+
+.lobby.visible input, 
+.lobby.visible select {
+    height: 30px;
+
+    padding: 0 7px;
+
+    border: 2px solid white;
+    border-radius: 6px;
+
+    color: black;
+}   
+
+.lobby.visible input:focus, 
+.lobby.visible select:focus {
+    outline: none;
+    border: 2px solid var(--accent)
+}
+
 .play-area.visible {
 
     padding: 20px;
