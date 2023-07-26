@@ -115,6 +115,10 @@ body {
     border-radius: 30px;
 
     background-color: var(--secondary);
+
+    display: grid;
+    align-content: start;
+    gap: 15px;
 }
 
 .lobby.visible .logo {
