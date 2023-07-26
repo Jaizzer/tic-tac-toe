@@ -175,6 +175,12 @@ body {
     gap: 5px;
 }
 
+
+.lobby.visible .entry-field-heading {
+    font-size: 20px;
+    font-weight: 600;
+}
+
 .play-area.visible {
 
     padding: 20px;
