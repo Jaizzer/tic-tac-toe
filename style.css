@@ -159,6 +159,22 @@ body {
     gap: 10px;
 }
 
+.lobby.visible .info {
+    height: 180px;
+
+    padding: 10px;
+
+    border-radius: 10px;
+
+    background-color: var(--primary);
+
+    color: white;
+
+    display: grid;
+    align-content: center;
+    gap: 5px;
+}
+
 .play-area.visible {
 
     padding: 20px;
