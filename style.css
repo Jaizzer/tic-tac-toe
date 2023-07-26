@@ -139,6 +139,11 @@ body {
     height: 100%;
 }
 
+.lobby.visible > .logo > .title {
+    font-size: clamp(20px, 6vw, 35px);
+    font-weight: 600;
+}
+
 .play-area.visible {
 
     padding: 20px;
