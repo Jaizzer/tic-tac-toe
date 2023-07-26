@@ -152,6 +152,11 @@ body {
     font-weight: 600;
 }
 
+.lobby.visible form {
+    display: grid;
+    gap: 10px;
+}
+
 .lobby.visible .entry-field {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -202,7 +207,7 @@ body {
 
 .lobby.visible form button {
     width: clamp(67px, 15%, 80px);
-    
+
     padding: clamp(4px, 1%, 7px) clamp(2.5px, 2%, 4px);
 
     border-radius: 6px;
