@@ -169,7 +169,7 @@ body {
 }
 
 .lobby.visible .info {
-    height: 180px;
+    height: 210px;
 
     padding: 15px;
 
@@ -181,7 +181,7 @@ body {
 
     display: grid;
     align-content: center;
-    gap: 5px;
+    gap: 10px;
 }
 
 
