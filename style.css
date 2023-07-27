@@ -389,6 +389,7 @@ body {
 }
 
 .player-status {
+    width: min(100%, 400px);
     border-radius: 6px;
     padding: 10px;
     height: 70px;
