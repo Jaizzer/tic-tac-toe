@@ -121,7 +121,7 @@ function startGame(player1, player2) {
             }
 
             // Traverse diagonally (Lower Left to Upper Right)
-            if ((row === 1 && col === 1) || (row === 0 && col === 2) || (row === 2 && col === 0)) {
+            if ((row === '1' && col === '1') || (row === '0' && col === '2') || (row === '2' && col === '0')) {
                 if (board[row][col] === board[0][2] && board[row][col] === board[1][1] && board[row][col] === board[2][0]) {
                     return "win";
                 }
