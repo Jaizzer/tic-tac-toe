@@ -376,6 +376,11 @@ body {
     font-size: 25px;
 }
 
+.play-area.visible .player-status > .player-name {
+    max-width: 300px;
+    overflow: auto;
+}
+
 .play-area.visible .player-status {
     transition: box-shadow 0.5s;
     color: white;
