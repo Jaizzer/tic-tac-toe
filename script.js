@@ -220,6 +220,9 @@ function startGame(player1, player2) {
                         setTimeout( function () {
                             alert(`${flowControl.getCurrentTurnPlayer().getName()} Won!`)
                         }, 100);
+
+                        // Restart game briefly after displaying the result.
+                        setTimeout(restart, 120)
                     }
                     // If no one won, display "Tie".
                     else {
@@ -227,6 +230,9 @@ function startGame(player1, player2) {
                         setTimeout( function () {
                             alert(`Tie`)
                         }, 100);
+
+                        // Restart game briefly after displaying the result.
+                        setTimeout(restart, 120)
                     }
                 }
                 // If the game is not over  yet, switch the player's turns.
