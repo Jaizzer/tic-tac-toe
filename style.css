@@ -361,7 +361,7 @@ body {
     width: min(100%, 400px);
     border-radius: 6px;
     padding: 10px 25px;
-    height: 70px;
+    height: auto;
 
     display: flex;
     justify-content: start;
