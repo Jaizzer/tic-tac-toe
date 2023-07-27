@@ -214,6 +214,10 @@ body {
     border: 2px solid var(--accent)
 }
 
+.lobby.visible select {
+    font-weight: 600;
+}
+
 .lobby.visible form button {
     width: clamp(67px, 15%, 80px);
 
