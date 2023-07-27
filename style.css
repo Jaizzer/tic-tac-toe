@@ -360,7 +360,7 @@ body {
 .play-area.visible .player-status {
     width: min(100%, 400px);
     border-radius: 6px;
-    padding: 10px 25px;
+    padding: 10px 20px;
     height: auto;
 
     display: flex;
