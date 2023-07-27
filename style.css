@@ -435,6 +435,8 @@ body {
     font-size: 60px;
     font-weight: 600;
     color: var(--secondary);
+
+    border-radius: 5px;
 }
 
 .play-area.visible .cell:hover, 
