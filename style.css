@@ -436,3 +436,13 @@ body {
     font-weight: 600;
     color: var(--secondary);
 }
+
+.play-area.visible .cell:hover, 
+.play-area.visible .cell:active {
+    transition-property: transform, box-shadow;
+    transition-duration: 0.2s, 0.2s;
+    transition-timing-function: ease;
+
+    transform: scale(0.95);
+    box-shadow: 0 0 6px 2px rgba(153, 153, 160, 0.369);
+}
