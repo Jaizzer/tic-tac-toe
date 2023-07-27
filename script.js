@@ -219,14 +219,14 @@ function startGame(player1, player2) {
                         // Add 1 second delay before displaying result.
                         setTimeout( function () {
                             alert(`${flowControl.getCurrentTurnPlayer().getName()} Won!`)
-                        }, 1000);
+                        }, 100);
                     }
                     // If no one won, display "Tie".
                     else {
                         // Add 1 second delay before displaying result.
                         setTimeout( function () {
                             alert(`Tie`)
-                        }, 1000);
+                        }, 100);
                     }
                 }
                 // If the game is not over  yet, switch the player's turns.
