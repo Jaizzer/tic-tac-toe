@@ -311,11 +311,11 @@ function startGame(player1, player2) {
 
     // Create contents of player list.
     document.querySelector(".player-list").innerHTML = `<div class="player-status active" id="${player1.getName()}">
+                                                            <div class="player-symbol">${player1.getSymbol()}:</div>
                                                             <div class="player-name">${player1.getName()}</div>
-                                                            <div class="player-symbol">${player1.getSymbol()}</div>
                                                         </div>
                                                         <div class="player-status idle" id="${player2.getName()}">
+                                                            <div class="player-symbol">${player2.getSymbol()}:</div>
                                                             <div class="player-name">${player2.getName()}</div>
-                                                            <div class="player-symbol">${player2.getSymbol()}</div>
                                                         </div`;
 }
