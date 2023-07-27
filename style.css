@@ -306,6 +306,12 @@ body {
 .play-area.visible .actions {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 10px;
 }
 
 .play-area.visible button {
