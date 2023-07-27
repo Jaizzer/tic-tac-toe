@@ -247,13 +247,8 @@ function startGame(player1, player2) {
         };
     })();
 
-    // Create restart button.
-    const restartButton = document.createElement("button");
-    restartButton.id = "restart"
-    restartButton.textContent = "Restart";
-
-    // Add restart feature to restart button.
-    restartButton.addEventListener("click", function() {
+    // Restart function.
+    const restart = () => {
         // Clear gameboard.
         gameBoard.reset();
 
@@ -269,7 +264,15 @@ function startGame(player1, player2) {
         // Empty all cells in DOM.
         let cells = document.querySelectorAll(".cell");
         cells.forEach(cell => cell.textContent = "");
-    });
+    }
+
+    // Create restart button.
+    const restartButton = document.createElement("button");
+    restartButton.id = "restart"
+    restartButton.textContent = "Restart";
+
+    // Add restart feature to restart button.
+    restartButton.addEventListener("click", restart);
 
     // Append restart button to the DOM.
     document.querySelector(".actions").appendChild(restartButton);
