@@ -351,42 +351,6 @@ body {
     row-gap: 10px;
 }
 
-.play-area.visible .board-container {
-    height: 0;
-    width: min(100%, 400px);
-
-    padding-top: min(100%, 400px);
-
-    position: relative;
-
-    justify-self: center;
-}
-
-.play-area.visible .board {
-    position: absolute;
-    top: 0%;
-    left: 50%;
-    transform: translate(-50%, 0%);
-
-    height: 100%;
-    width: 100%;
-
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.play-area.visible .cell {
-    background-color: white;
-    border: 1px solid black;
-
-    display: grid;
-    justify-content: center;
-    align-content: center;
-
-    font-size: 25px;
-}
-
 .play-area.visible .player-list {
     display: grid;
     row-gap: 10px;
@@ -427,4 +391,41 @@ body {
 .play-area.visible .player-status.idle {
     background-color: #caa7e7;
     box-shadow: none;
+}
+
+
+.play-area.visible .board-container {
+    height: 0;
+    width: min(100%, 400px);
+
+    padding-top: min(100%, 400px);
+
+    position: relative;
+
+    justify-self: center;
+}
+
+.play-area.visible .board {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+
+    height: 100%;
+    width: 100%;
+
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.play-area.visible .cell {
+    background-color: white;
+    border: 1px solid black;
+
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
+    font-size: 25px;
 }
