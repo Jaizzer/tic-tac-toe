@@ -247,6 +247,22 @@ body {
     background-color: var(--secondary);
  } 
 
+.play-area.visible {
+
+    padding: 20px;
+
+    display: grid;
+    grid-template-rows: repeat(2, auto) 1fr;
+
+    row-gap: 10px;
+}
+
+.play-area .logo {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+
 .play-area.visible .logo {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -285,21 +301,6 @@ body {
 .play-area.visible > .logo > .title {
     font-size: clamp(20px, 6vw, 35px);
     font-weight: 600;
-}
-
-.play-area.visible {
-
-    padding: 20px;
-
-    display: grid;
-    grid-template-rows: repeat(2, auto) 1fr;
-
-    row-gap: 10px;
-}
-
-.play-area .logo {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
 }
 
 .actions {
