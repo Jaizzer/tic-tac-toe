@@ -377,7 +377,7 @@ body {
 }
 
 .play-area.visible .player-status > .player-name {
-    max-width: 300px;
+    max-width: 250px;
     overflow: auto;
 }
 
