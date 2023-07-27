@@ -420,6 +420,9 @@ body {
 
     background-color: var(--secondary);
     gap: 4px;
+
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .play-area.visible .cell {
