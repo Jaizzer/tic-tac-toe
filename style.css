@@ -405,6 +405,12 @@ body {
     align-items: center;
 }
 
+.play-area.visible .player-status > .player-symbol {
+    height: auto;
+
+    font-size: 25px;
+}
+
 .play-area.visible .player-status {
     transition: box-shadow 0.5s;
     color: white;
