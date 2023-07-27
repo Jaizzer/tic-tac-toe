@@ -389,7 +389,7 @@ body {
 
 .play-area.visible .player-list {
     display: grid;
-    row-gap: 5px;
+    row-gap: 10px;
     align-content: start;
 
 }
