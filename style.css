@@ -239,7 +239,13 @@ body {
 }
 
 
+.play-area.visible {
+    border-radius: 30px;
 
+    margin: max(2%, 15px);
+ 
+    background-color: var(--secondary);
+ } 
 
 .play-area.visible .logo {
     display: grid;
