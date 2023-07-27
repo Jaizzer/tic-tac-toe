@@ -39,6 +39,11 @@ TicTacToe is a web application that allows users to play a 2-player tic-tac-toe 
 
 8. To manually create a new game, just press 'New Game', and the players will be redirected back to the lobby.
 
+## Built With
+- CSS
+- HTML
+- JavaScript
+
 ## Contributing
 Contributions to TicTacToe are very welcome! If you find any bugs or have improvement suggestions, just open an issue on the GitHub repository. You can also fork the repository, make your changes, and then submit a pull request.
 
