@@ -417,11 +417,13 @@ body {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
+
+    background-color: var(--secondary);
+    gap: 4px;
 }
 
 .play-area.visible .cell {
     background-color: white;
-    border: 1px solid black;
 
     display: grid;
     justify-content: center;
