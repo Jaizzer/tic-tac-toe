@@ -28,14 +28,35 @@ form.addEventListener('submit', function (event) {
     const player1Symbol = form.querySelector("#player-1-symbol").value;
     const player2Symbol = form.querySelector("#player-2-symbol").value;
 
-    // Alert if player symbol are the same.
-    if (player1Name === player2Name && player1Symbol === player2Symbol) {
+    // Input validation.
+    if (/^[0-9]/.test(player1Name) && /^[0-9]/.test(player2Name)) {
+
+        // Alert if both Player 1 and Player 2 names start with a number.
+        alert("Both player names cannot start with a number.");
+    } 
+    else if (!/^[a-zA-Z]/.test(player1Name)) {
+
+        // Alert if Player 1 name doesn't start with a letter.
+        alert("Player 1 name must start with a letter.");
+    } 
+    else if (!/^[a-zA-Z]/.test(player2Name)) {
+
+        // Alert if Player 2 name doesn't start with a letter.
+        alert("Player 2 name must start with a letter.");
+    } 
+    else if (player1Name === player2Name && player1Symbol === player2Symbol) {
+
+        // Alert if both player names and symbols are the same.
         alert("You must use different names and symbols");
-    }
+    } 
     else if (player1Symbol === player2Symbol) {
+
+        // Alert if both player symbols are the same.
         alert("You must use different symbols");
-    }
+    } 
     else if (player1Name === player2Name) {
+
+        // Alert if both player names are the same.
         alert("You must use different names");
     }
     else {
